@@ -7,7 +7,7 @@ $v = [1,5,6];
 // echo "batura : " . $suma;
 
 
-$suma = 0; 
+$suma = 0;
 for ($x=0; $x <=3; $x++) {
     // echo "El número es $x <br>";
     $suma = $suma + $v[$x];
@@ -25,6 +25,7 @@ for ($x=0; $x <=3; $x++) {
 // while
 
 // foreach
+
 
 
 
