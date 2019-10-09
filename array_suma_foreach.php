@@ -9,11 +9,17 @@ $suma = 0;
 
 $x = 0;
 
-while($x <3) {
-    // echo "la suma es $suma <br>";
-    $suma = $suma + $v[$x];
+foreach ($v as $x) {
+    // echo "x: $x; suma: $suma <br>";
+    $suma = $suma + $x;
     $x++;
 }
+
+
+// while($x <3) {
+    // echo "la suma es $suma <br>";
+    
+// }
 
 echo "batura : " . $suma;
 
