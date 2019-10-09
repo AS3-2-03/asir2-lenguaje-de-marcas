@@ -10,7 +10,7 @@ $vv = [
 $suma = 0;
 for ($x=0; $x <=6; $x++) {
     // echo "El número es $x <br>";
-    $suma = $suma + $vv;
+    $suma = $suma + $vv[x];
     
 }
 // echo "La suma es = " . array_sum($v) . "\n";
