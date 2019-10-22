@@ -1,16 +1,19 @@
 <?php
 
-$v = [1,2,3];
+$vv = [[11,12,13],[21,22,23]];
 
 
 
 
-foreach ($v as $x) {
-    echo "$x <br>";
-    //$suma = $suma + $x;
+foreach ($vv as $v) {
+    foreach ($v as $x) {
+        echo "$x <br>";
+    }
+    
+    echo $x . "-------------------------<br>";
 }
 
-echo "<br>-------------------------<br>";
+
 
 
 $v = ["juan","adrian","marc"];
