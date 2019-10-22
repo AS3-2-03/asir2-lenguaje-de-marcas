@@ -1,7 +1,7 @@
 <?php
 
 $v = [juan,adrian,marc];
-$suma = 0;
+// $suma = 0;
 
 // $suma = $v[0] + $v[1] + $v[2];
 // echo "batura : " . $suma;
