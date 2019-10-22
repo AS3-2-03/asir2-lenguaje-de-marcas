@@ -66,6 +66,6 @@ echo "batura foreach: " . $suma;
 //}
 // echo "La suma es = " . array_sum($v) . "\n";
 
-    echo "batura : " . $suma;
+    // echo "batura : " . $suma;
 
 ?>
