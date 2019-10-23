@@ -4,15 +4,15 @@ $empty1 = [];
 
 $empty2 = array();  // >$empty = [];
 
+/*
 $v = [
     "x" => 1,
     "y" => 5
 ];
 
 
-
-
 echo $v["x"];
+*/
 
 
 $names1 = ['Harry', 'Ron', 'Hermione'];
