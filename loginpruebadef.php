@@ -22,8 +22,8 @@ if ($conn->connect_error) {
 //echo "Connected successfully";
 // formulariotik bidalitako datuak irakurri
 // leer desde el formulario
-$user =  $_POST['user'];
-$password = $_POST['password'];
+$user =  $_POST['juan'];
+$password = $_POST['juaneibar'];
 //
 $sql = "SELECT * FROM users WHERE user = '$user';";
 //echo $sql . "<br><br>";
