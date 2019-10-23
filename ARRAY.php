@@ -7,11 +7,20 @@ $empty2 = array();  // >$empty = [];
 
 $names1 = ['Harry', 'Ron', 'Hermione'];
 $names2 = array('Harry', 'Ron', 'Hermione');
+
+
+
+// array con los nombres
 $status1 = [
     'name' => 'James Potter',
     'status' => 'dead'
 ];
-$status2 = array(
+
+
+var_dump($status1);
+
+
+/*$status2 = array(
     'name' => 'James Potter',
     'status' => 'dead'
 );
@@ -47,3 +56,4 @@ for ($row = 0; $row < 4; $row++) {
     }
     echo "</ul>";
 }
+/
