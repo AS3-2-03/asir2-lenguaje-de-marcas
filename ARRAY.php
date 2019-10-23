@@ -9,6 +9,9 @@ $v = [
     "y" => 5
 ];
 
+
+
+
 echo $v["x"];
 
 
@@ -27,7 +30,10 @@ $status1 = [
 var_dump($status1);
 
 
-/*$status2 = array(
+
+
+
+$status2 = array(
     'name' => 'James Potter',
     'status' => 'dead'
 );
@@ -63,4 +69,4 @@ for ($row = 0; $row < 4; $row++) {
     }
     echo "</ul>";
 }
-/
+?>
