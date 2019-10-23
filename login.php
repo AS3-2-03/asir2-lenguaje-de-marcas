@@ -18,8 +18,8 @@ $user2 = "juan";
 $pass2 = '$2y$10$6VajaA0D4deyowZ6Jnbt6.4tcMi6f15P9wGV6xFOn1Rb9AJcjf0mG';
 
 // datos desde el formulario
-$user = $_POST['user'];
-$password = $_POST['password'];
+$user = $_POST['juan'];
+$password = $_POST['juaneibar'];
 
 
 if ($user == $user1) {
