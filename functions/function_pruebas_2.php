@@ -3,7 +3,7 @@
 
 
 function familyName($fname) {
-    echo "$fname Refsnes.<br>";
+    echo "$fname Sevilla.<br>";
 }
 
 
@@ -16,4 +16,4 @@ familyName("Borge");
 
 
 
-?>
+familyName();
