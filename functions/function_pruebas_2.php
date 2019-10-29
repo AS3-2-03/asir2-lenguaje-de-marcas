@@ -11,7 +11,7 @@ function familyName($fname) {
 
 function echo_izena_3() {
     for ($i=0; $i<3; $i++) {
-        familyName($fname);
+        familyName("who are you?");
     }
 }
 
