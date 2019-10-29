@@ -6,6 +6,7 @@ function echo_izena($s="Kaixo") {
 }
 
 
+
 function echo_izena_3() {
     for ($i=0; $i<3; $i++) {
         echo_izena();
