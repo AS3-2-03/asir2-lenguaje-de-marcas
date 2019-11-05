@@ -25,15 +25,15 @@ $password = $_POST['password'];
 //echo $user."--->".$password;
 
 
-$sql = "SELECT * FROM users WHERE name = '$user';";
+$sql = "SELECT * FROM users WHERE user = '$user';";
 //$sql = "SELECT * FROM users;";
 //echo $sql . "<br><br>";
 //
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
-    if ($user == $row["name"]){
-        if (password_verify($password, $row["password"])) {
+    if ($user == $row["user"]){
+        if (password_verify($password, $row["pass"])) {
             echo "OK chaval....";
         } else{
             echo "KO (contraseña no coincide)";
