@@ -24,15 +24,22 @@ VALUES ('Titulo 1', 'Informacion inicial','irudia01.png');
 
 
 
-
+/*
 
 CREATE TABLE IF NOT EXISTS user (
     name VARCHAR(100) NOT NULL PRIMARY KEY,
     password VARCHAR(100) NOT NULL,
 );
+*/
+
+
 
 
 /* insert user */ 
 -- name / password =  adrian / adrianeibar  y  juan / juaneibar
+/*
 INSERT INTO user (name, password)
 VALUES ('adrian', '$2y$10$F.OkHuuDQfsTXvRrF0SPqeEteLKTTSrpOIw3asdBr4XKI3JjbXIei'),('juan', '$2y$10$6VajaA0D4deyowZ6Jnbt6.4tcMi6f15P9wGV6xFOn1Rb9AJcjf0mG');
+
+
+*/
