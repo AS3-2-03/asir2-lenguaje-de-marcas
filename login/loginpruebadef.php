@@ -6,9 +6,6 @@
 //echo '<br>';
 //echo $_GET['password'];
 
-
-
-
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -19,29 +16,33 @@ $conn = new mysqli($servername, $username, $password,$dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-//echo "Connected successfully";
+echo "Connected successfully";
 // formulariotik bidalitako datuak irakurri
 // leer desde el formulario
 $user =  $_POST['user'];
 $password = $_POST['password'];
 //
-$sql = "SELECT * FROM users WHERE user = '$user';";
+//echo $user."--->".$password;
+
+
+$sql = "SELECT * FROM users WHERE name = '$user';";
+//$sql = "SELECT * FROM users;";
 //echo $sql . "<br><br>";
 //
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
-    if ($user == $row["user"]){
-        if (password_verify($password, $row["pass"])) {
-            echo "OK";
+    if ($user == $row["name"]){
+        if (password_verify($password, $row["password"])) {
+            echo "OK chaval....";
         } else{
-            echo "KO";
+            echo "KO (contraseña no coincide)";
         }
     } else {
-        echo "KO";
+        echo "KO (no encuentro el usuario)";
     }
 } else {
-    echo "KO";
+    echo "KO (result malo)";
 }
 $conn->close();
 
