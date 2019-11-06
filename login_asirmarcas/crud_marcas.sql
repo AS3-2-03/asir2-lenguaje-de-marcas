@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS blog (
 
 /* insert blog */
 INSERT INTO blog (title, info, img)
-VALUES ('Titulo 1', 'Informacion inicial','irudia01.png'), ('Titulo 2', 'Segunda informacion','irudia02.jpg'); 
+VALUES ('Titulo 1', 'Informacion inicial','irudia01.png'), ('Titulo 2', 'Segunda informacion','irudia02.jpg'), ('Titulo 3', 'Tercera informacion','irudia03.jpg'); 
 
 
 
@@ -28,7 +28,7 @@ VALUES ('Titulo 1', 'Informacion inicial','irudia01.png'), ('Titulo 2', 'Segunda
 
 CREATE TABLE IF NOT EXISTS user (
     name VARCHAR(100) NOT NULL PRIMARY KEY,
-    password VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL
 );
 */
 
