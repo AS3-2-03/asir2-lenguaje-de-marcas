@@ -16,6 +16,13 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         echo "id: " . $row["id"]. "<br> title: " . $row["title"]. "<br> info:" . $row["info"]. "<br> <img width='20%' src=img/" . $row["img"] . "> <br><hr/>";
+        ?>
+        <form action="delete.php" method="POST">
+            <input type="hidden" name="id" value="<?php echo $row["id"]?>">
+            <input type="submit" value="Delete">
+        </form>
+        <hr/> 
+        <?php
     }
 } else {
     echo "0 results";
