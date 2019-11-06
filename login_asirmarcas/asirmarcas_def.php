@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
     if ($user == $row["name"]){
         if (password_verify($password, $row["password"])) {
             //echo "OK chaval....";
-            header('Location: read_marcas.php');
+            header('Location: delete.php');
         } else{
             //echo "KO (contraseña no coincide)";
             header('Location: asirmarcas_login.html');
