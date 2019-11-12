@@ -10,6 +10,17 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 //
+
+?>
+        <form action="insert_form.html" method="POST">
+            <input type="hidden" name="id" value="<?php echo $row["id"]?>">
+            <input type="submit" value="Insert">
+        </form>
+        <hr/> 
+<?php
+
+
+
 $sql = "SELECT * FROM blog";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
