@@ -12,11 +12,36 @@ if ($conn->connect_error) {
 //
 
 ?>
+
+<html>
+<body>
+<style >
+
+div.a {
+    font color: blue;
+    text-align: center; 
+}
+body  {
+  background-color: #cccccc;
+}
+</style>
+
+<div class="a">
+<h1>This is a heading</h1>
+<p>ut.</p>
+</div>
+
+</body>
+</html>
+
+
 <form action="asirmarcas_login.html" method="POST">
     <input type="hidden" name="id" value="<?php echo $row["id"]?>">
     <input type="submit" value="Login">
 </form>
 <hr/> 
+
+
 <?php
 
 
@@ -31,3 +56,5 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 $conn->close();
+
+?>
