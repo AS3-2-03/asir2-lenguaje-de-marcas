@@ -31,6 +31,7 @@ $sql = "SELECT * FROM user WHERE name = '$user';";
 //$sql = "SELECT * FROM users;";
 //echo $sql . "<br><br>";
 //
+
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
@@ -40,16 +41,32 @@ if ($result->num_rows > 0) {
             header('Location: delete_form.php');
         } else{
             //echo "KO (contraseña no coincide)";
-            header('Location: asirmarcas_login.html');
+            header('Location: login_estilos.html');
         }
     } else {
-        header('Location: asirmarcas_login.html');
+        header('Location: login_estilos.html');
     }
 } else {
-    header('Location: asirmarcas_login.html');
+    header('Location: login_estilos.html');
 }
 $conn->close();
 
+
+
+
+/* POSIBLE CODIGO
+
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "erabiltzailea: " . $row["name"]. " / " . $row["password"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+*/
 
 
 
@@ -64,3 +81,4 @@ $conn->close();
 /*
 ($user == $user1 && $pass == $pass1)
 */
+?>

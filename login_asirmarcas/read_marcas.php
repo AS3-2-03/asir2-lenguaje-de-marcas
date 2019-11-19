@@ -20,10 +20,16 @@ if ($conn->connect_error) {
 div.a {
     font color: blue;
     text-align: center;
-    background-color: cyan;
+    background-color: white;
 }
+
 body  {
-  background-color: smooth grey;
+background: plum; /* fallback for old browsers #76b852 */
+  background: cadetblue; /* fallback for old browsers #76b852 */
+  background: -webkit-linear-gradient(right, plum, cadetblue);
+  background: -moz-linear-gradient(right, plum, cadetblue);
+  background: -o-linear-gradient(right, plum, cadetblue);
+  background: linear-gradient(to left, plum, cadetblue);
 }
 </style>
 
@@ -36,7 +42,7 @@ body  {
 </html>
 
 
-<form action="asirmarcas_login.html" method="POST">
+<form action="login_estilos.html" method="POST">
     <input type="hidden" name="id" value="<?php echo $row["id"]?>">
     <input type="submit" value="Login">
 </form>

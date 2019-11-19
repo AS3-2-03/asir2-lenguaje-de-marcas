@@ -27,6 +27,31 @@ if (isset($_POST["pepe"])) {
 
 
 ?>
+
+
+
+<html>
+<body>
+<style >
+
+div.a {
+    font color: blue;
+    text-align: center;
+    background-color: white;
+}
+
+body  {
+    background: plum; /* fallback for old browsers #76b852 */
+  background: cadetblue; /* fallback for old browsers #76b852 */
+  background: -webkit-linear-gradient(left, plum, cadetblue);
+  background: -moz-linear-gradient(left, plum, cadetblue);
+  background: -o-linear-gradient(left, plum, cadetblue);
+  background: linear-gradient(to right, plum, cadetblue);
+}
+</style>
+
+
+
     <form action="" method="POST">
         <input type="hidden" name="last_id" value="<?php echo $id_mod?>">
         Title:<br>

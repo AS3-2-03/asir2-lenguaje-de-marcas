@@ -11,13 +11,37 @@ if ($conn->connect_error) {
 }
 //
 
+
+
 ?>
-        <form action="insert_form.html" method="POST">
-            <input type="hidden" name="id" value="<?php echo $row["id"]?>">
-            <input type="submit" value="Insert">
-        </form>
-        <hr/> 
+
+<html>
+<body>
+<style >
+
+body  {
+background: plum; /* fallback for old browsers #76b852 */
+  background: cadetblue; /* fallback for old browsers #76b852 */
+  background: -webkit-linear-gradient(right, plum, cadetblue);
+  background: -moz-linear-gradient(right, plum, cadetblue);
+  background: -o-linear-gradient(right, plum, cadetblue);
+  background: linear-gradient(to left, plum, cadetblue);
+}
+</style>
+
+</body>
+</html>
+
+
+<form action="insert_form.html" method="POST">
+    <input type="hidden" name="id" value="<?php echo $row["id"]?>">
+    <input type="submit" value="Insert">
+</form>
+<hr/> 
 <?php
+
+
+
 
 
 
