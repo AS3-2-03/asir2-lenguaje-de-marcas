@@ -19,15 +19,16 @@ if ($conn->connect_error) {
 
 div.a {
     font color: blue;
-    text-align: center; 
+    text-align: center;
+    background-color: cyan;
 }
 body  {
-  background-color: #cccccc;
+  background-color: smooth grey;
 }
 </style>
 
 <div class="a">
-<h1>This is a heading</h1>
+<h1>This is music.</h1>
 <p>ut.</p>
 </div>
 
