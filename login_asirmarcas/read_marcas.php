@@ -23,6 +23,11 @@ div.a {
     background-color: white;
 }
 
+div.b {
+    font color: blue;
+    text-align: center;
+}
+
 body  {
 background: plum; /* fallback for old browsers #76b852 */
   background: cadetblue; /* fallback for old browsers #76b852 */
@@ -36,17 +41,20 @@ background: plum; /* fallback for old browsers #76b852 */
 <div class="a">
 <h1>This is music.</h1>
 <p>ut.</p>
+<hr/>
+</div>
+
+<div class="b">
+<form action="login_estilos.html" method="POST">
+    <input type="hidden" name="id" value="<?php echo $row["id"]?>">
+    <input type="submit" value="Login">
+</form>
+
 </div>
 
 </body>
 </html>
 
-
-<form action="login_estilos.html" method="POST">
-    <input type="hidden" name="id" value="<?php echo $row["id"]?>">
-    <input type="submit" value="Login">
-</form>
-<hr/> 
 
 
 <?php
