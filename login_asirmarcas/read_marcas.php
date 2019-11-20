@@ -18,15 +18,17 @@ if ($conn->connect_error) {
 <style >
 
 div.a {
-    font color: blue;
+    color: white;
     text-align: center;
-    background-color: white;
+    background-color: #73d3;
 }
 
+/*
 div.b {
     font color: blue;
     text-align: center;
 }
+*/
 
 body  {
 background: plum; /* fallback for old browsers #76b852 */
@@ -39,23 +41,29 @@ background: plum; /* fallback for old browsers #76b852 */
 </style>
 
 <div class="a">
-<h1>This is music.</h1>
-<p>ut.</p>
-<hr/>
-</div>
+<pre>
 
-<div class="b">
+
+<h1>Thi s ism
+yp age.</h1>
+</pre>
+<p>ut.</p>
+
 <form action="login_estilos.html" method="POST">
     <input type="hidden" name="id" value="<?php echo $row["id"]?>">
     <input type="submit" value="Login">
 </form>
 
+<hr/>
 </div>
 
 </body>
 </html>
 
 
+
+<div class="a">
+<pre>
 
 <?php
 
@@ -65,11 +73,15 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. "<br> title: " . $row["title"]. "<br> info:" . $row["info"]. "<br> <img width='20%' src=img/" . $row["img"] . "> <br><hr/>";
+        echo "id: " . $row["id"]. "<br> title: " . $row["title"]. "<br> info:" . $row["info"]. "<br> <img width='40%' src=img/" . $row["img"] . "> <br><hr/>";
     }
 } else {
     echo "0 results";
 }
 $conn->close();
 
+
 ?>
+
+</pre>
+</div>
