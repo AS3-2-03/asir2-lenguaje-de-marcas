@@ -36,5 +36,3 @@ $type = 'png';
 $base64 = 'data:image/' . $type . ';base64,' . base64_encode($image);
 echo "<img src=$base64>";
 
-
-
