@@ -11,3 +11,4 @@ $forecast = (new DarkSkyApi('e74b990fb81cf9ad34a2c13c4d21604a'))
 echo $forecast->currently()->summary();
 
 
+?>
