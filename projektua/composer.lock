@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a51141a44393acc445b4347ddba47ff6",
+    "content-hash": "b633de82fa4a55abbbd875a8c1a48dc5",
     "packages": [
         {
             "name": "ayeo/temperature",
@@ -218,6 +218,7 @@
                 "open weather map",
                 "weather"
             ],
+            "abandoned": true,
             "time": "2018-09-04T05:12:39+00:00"
         },
         {
