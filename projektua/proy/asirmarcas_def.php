@@ -6,7 +6,7 @@
 //echo '<br>';
 //echo $_GET['password'];
 
-$servername = "192.168.71.8:3306";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "asirmarcas";
