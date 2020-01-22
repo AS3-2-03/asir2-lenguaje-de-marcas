@@ -38,16 +38,16 @@ if ($result->num_rows > 0) {
     if ($user == $row["name"]){
         if (password_verify($password, $row["password"])) {
             //echo "OK chaval....";
-            header('Location: delete_form.php');
+            header('Location: /prueba_inter/index.html');
         } else{
             //echo "KO (contraseña no coincide)";
-            header('Location: login_estilos.html');
+            header('Location: /prueba_inter/index.html');
         }
     } else {
-        header('Location: login_estilos.html');
+        header('Location: /prueba_inter/index.html');
     }
 } else {
-    header('Location: login_estilos.html');
+    header('Location: /prueba_inter/index.html');
 }
 $conn->close();
 
