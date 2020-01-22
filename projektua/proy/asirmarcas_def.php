@@ -7,8 +7,8 @@
 //echo $_GET['password'];
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "adrian";
+$password = "adrianeibar";
 $dbname = "asirmarcas";
 // Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
@@ -38,16 +38,16 @@ if ($result->num_rows > 0) {
     if ($user == $row["name"]){
         if (password_verify($password, $row["password"])) {
             //echo "OK chaval....";
-            header('Location: /prueba_inter/index.html');
+            header('Location: prueba_inter/inicio.html');
         } else{
             //echo "KO (contraseña no coincide)";
-            header('Location: /prueba_inter/index.html');
+            header('Location: prueba_inter/inicio.html');
         }
     } else {
-        header('Location: /prueba_inter/index.html');
+        header('Location: prueba_inter/inicio.html');
     }
 } else {
-    header('Location: /prueba_inter/index.html');
+    header('Location: prueba_inter/inicio.html');
 }
 $conn->close();
 

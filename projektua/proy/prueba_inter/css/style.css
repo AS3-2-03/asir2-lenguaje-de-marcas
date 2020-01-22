@@ -42,19 +42,19 @@ body {
 }
 
 ::-webkit-input-placeholder {
-	color: #C9C9C9;
+	color: black;
 }
 
 :-moz-placeholder {
-	color: #C9C9C9;
+	color: black;
 }
 
 ::-moz-placeholder {
-	color: #C9C9C9;
+	color: black;
 }
 
 :-ms-input-placeholder {
-	color: #C9C9C9;
+	color: black;
 }
 
 legend {
@@ -101,12 +101,12 @@ button:not(#back) {
 	width: 100%;
 	font-weight: 700;
 	text-transform: uppercase;
-	background: #82B541;
-	color: white;
+	background: rgb(140, 15, 223);
+	color: whitesmoke;
 }
 button:not(#back):hover {
 	cursor: pointer;
-	background: #6f9b38;
+	background: #e20813;
 }
 
 .fadein-stagger > * {
@@ -161,7 +161,7 @@ button:not(#back):hover {
 	overflow: scroll;
 	width: 100%;
 	text-align: left;
-	background: #002B36;
+	background: black;
 }
 
 #logo {
