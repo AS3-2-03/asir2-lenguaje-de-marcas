@@ -19,6 +19,16 @@ if ($conn->connect_error) {
 <body>
 <style >
 
+
+div.a {
+    color: white;
+    text-align: center;
+    background-color: #73d3;
+}
+
+
+
+
 body  {
 background: plum; /* fallback for old browsers #76b852 */
   background: cadetblue; /* fallback for old browsers #76b852 */
@@ -33,11 +43,19 @@ background: plum; /* fallback for old browsers #76b852 */
 </html>
 
 
+
+<div class="a">
+
+<pre>
+
 <form action="insert_form.html" method="POST">
     <input type="hidden" name="id" value="<?php echo $row["id"]?>">
     <input type="submit" value="Insert">
 </form>
-<hr/> 
+<hr/>
+
+</pre>
+
 <?php
 
 
@@ -72,3 +90,6 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 $conn->close();
+
+?>
+</div>

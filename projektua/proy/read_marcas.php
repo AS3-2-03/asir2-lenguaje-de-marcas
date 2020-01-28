@@ -44,6 +44,32 @@ background: plum; /* fallback for old browsers #76b852 */
 <pre>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h1>Thi s ism
 yp age.</h1>
 </pre>
@@ -65,6 +91,16 @@ yp age.</h1>
 <div class="a">
 <pre>
 
+
+
+
+
+
+
+
+
+
+
 <?php
 
 
@@ -73,7 +109,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. "<br> title: " . $row["title"]. "<br> info:" . $row["info"]. "<br> <img width='40%' src=img/" . $row["img"] . "> <br><hr/>";
+       echo "id: " . $row["id"]. "<br> title: " . $row["title"]. "<br> info:" . $row["info"]. "<br> <img width='40%' src=img/" . $row["img"] . "> <br><hr/>";
     }
 } else {
     echo "0 results";

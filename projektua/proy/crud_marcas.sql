@@ -32,9 +32,6 @@ CREATE TABLE IF NOT EXISTS user (
 );
 
 
-
-
-
 /* insert user */ 
 -- name / password =  adrian / adrianeibar  y  juan / juaneibar
 
@@ -43,3 +40,12 @@ INSERT INTO user (name, password)
 VALUES ('adrian', '$2y$10$F.OkHuuDQfsTXvRrF0SPqeEteLKTTSrpOIw3asdBr4XKI3JjbXIei'),('juan', '$2y$10$6VajaA0D4deyowZ6Jnbt6.4tcMi6f15P9wGV6xFOn1Rb9AJcjf0mG');
 
 
+
+CREATE TABLE IF NOT EXISTS registros (
+    ciudad VARCHAR(100) NOT NULL PRIMARY KEY,
+    latitud VARCHAR(100) NOT NULL,
+    longitud VARCHAR(100) NOT NULL
+);
+
+INSERT INTO registros (ciudad, latitud, longitud)
+VALUES ('Tokyo', '35.6894989','139.6917114'),('Manchester', '53.4809500','-2.2374300');
