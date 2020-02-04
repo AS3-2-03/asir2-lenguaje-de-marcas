@@ -27,3 +27,31 @@ $sql = " INSERT INTO blog (title, info, img) VALUES ('$title','$info','$img');";
 
 $result = $conn->query($sql);
 header("Location: delete_form.php");
+
+
+
+
+
+
+
+
+
+
+    session_start();
+    if (!isset($_session['user'])) {
+        header('Location: '."delete_form.php");
+    }
+
+
+
+
+
+/*
+    session_start();
+    if (!isset($_session['user'])) {
+        header('Location: '."login_estilos.php");
+    }
+*/
+
+
+?>

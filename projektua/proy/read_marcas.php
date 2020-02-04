@@ -75,9 +75,9 @@ yp age.</h1>
 </pre>
 <p>ut.</p>
 
-<form action="login_estilos.html" method="POST">
+<form action="asirmarcas_def.php" method="POST">
     <input type="hidden" name="id" value="<?php echo $row["id"]?>">
-    <input type="submit" value="Login">
+    <input type="submit" value="Log In">
 </form>
 
 <hr/>

@@ -1,3 +1,4 @@
+<?php  session_start(); ?>  
 <?php
 $servername = "localhost";
 $username = "adrian";
@@ -14,6 +15,17 @@ if ($conn->connect_error) {
 
 
 ?>
+      <?php if(!isset($_SESSION['use'])) // If session is not set then redirect to Login Page
+       {
+           header("Location:asirmarcas_def.php");  
+       }
+
+          echo $_SESSION['use'];
+        echo "<br>";
+          echo "Login Success";
+          echo "<br>";
+          echo "<a href='logout.php'> Logout</a>"; 
+          ?>
 
 <html>
 <body>

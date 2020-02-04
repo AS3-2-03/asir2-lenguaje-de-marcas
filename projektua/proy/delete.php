@@ -19,3 +19,26 @@ $id = $_POST["id"];
 $sql = "DELETE FROM blog WHERE id=$id;";
 $result = $conn->query($sql);
 header("Location: delete_form.php");
+
+
+
+
+
+
+    session_start();
+    if (!isset($_session['user'])) {
+        header('Location: '."delete_form.php");
+    }
+
+
+
+/*
+    session_start();
+    if (!isset($_session['user'])) {
+        header('Location: '."home.php");
+    }
+*/
+
+
+
+?>

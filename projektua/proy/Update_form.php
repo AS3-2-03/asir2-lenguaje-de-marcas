@@ -24,7 +24,7 @@ if (isset($_POST["pepe"])) {
 
     echo "el valor pasado es: $id_mod";
 };
-
+echo "<a href='logout.php'> Logout</a> "; 
 
 ?>
 
