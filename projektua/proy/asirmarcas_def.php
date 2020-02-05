@@ -65,11 +65,13 @@ if(isset($_POST['login']))   // it checks whether the user clicked login button 
         <button type="submit"class="tipografia" name="login">Login</button>
       
 
-        
-
-
-
           </form>
+
+
+          <form action="insertusuario.php" method="POST">
+        <input type="submit" name="pepe" value="Create user">
+        </form>
+
 
         </div>
       </div>
